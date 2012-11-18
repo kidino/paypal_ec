@@ -11,16 +11,16 @@ How to use
 - you can load Paypal_ec from any controller functions but I suggest the __construct()
 - you need to create a credential array before loading the library.
 
-`
-	  $paypal_credentials = array(
-			'API_username' => 'paypal_api1.e-sentral.com',
-			'API_signature' => 'AEmMdYb3RRE122AFNn0TfbAxyhYuA.5J3wHV4AfizBZMLpQsQ1Ybaz-e',
-			'API_password' => '37SCHA3TYBJFQ43T',
-			'sandbox_status' => true
-	  );	  
+```php
+$paypal_credentials = array(
+   'API_username' => 'paypal_api1.e-sentral.com',
+   'API_signature' => 'AEmMdYb3RRE122AFNn0TfbAxyhYuA.5J3wHV4AfizBZMLpQsQ1Ybaz-e',
+   'API_password' => '37SCHA3TYBJFQ43T',
+   'sandbox_status' => true
+);	  
 	  
-	  $this->load->library('paypal_ec', $paypal_credentials);
-`
+$this->load->library('paypal_ec', $paypal_credentials);
+```
 
 - test.php is your sample controller, with some notes and documentations in between. make sure you read through them.
 
