@@ -86,7 +86,7 @@ class Test extends CI_Controller {
 		$this->load->library('paypal_ec', $paypal_details);
 		
 	 }
-ABCDEFGHIJKLMNOPQRSTUVWXYZabc.0123456789abcdefgihjklmn-e
+
 	 /* -------------------------------------------------------------------------------------------------
 	 * a sample order page, which just iterate $this->product and display them
 	 * --------------------------------------------------------------------------------------------------
