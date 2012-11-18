@@ -69,9 +69,13 @@ class Test extends CI_Controller {
 		parent::__construct();
 
 		$paypal_details = array(
-			'API_username' => 'paypal_api1.e-sentral.com',
-			'API_signature' => 'AEmMdYb3RRE122AFNn0TfbAxyhYuA.5J3wHV4AfizBZMLpQsQ1Ybaz-e',
-			'API_password' => '37SCHA3TYBJFQ43T',
+			// you can get this from your Paypal account, or from your
+			// test accounts in Sandbox
+			
+			'API_username' => 'paypal_api1.somedomain.com',
+			'API_signature' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZabc.0123456789abcdefgihjklmn-e',
+			'API_password' => 'ABCDEFGHIJ123456',
+			
 			// Paypal_ec defaults sandbox status to true
 			// Change to false if you want to go live and
 			// update the API credentials above
@@ -82,7 +86,7 @@ class Test extends CI_Controller {
 		$this->load->library('paypal_ec', $paypal_details);
 		
 	 }
-
+ABCDEFGHIJKLMNOPQRSTUVWXYZabc.0123456789abcdefgihjklmn-e
 	 /* -------------------------------------------------------------------------------------------------
 	 * a sample order page, which just iterate $this->product and display them
 	 * --------------------------------------------------------------------------------------------------
