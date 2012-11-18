@@ -296,8 +296,8 @@ class Paypal_ec {
 		if (curl_errno($ch)) 
 		{
 			// moving to display page to display curl errors
-			  $this->CI->set_userdata(array('curl_error_no' => curl_errno($ch)));
-			  $this->CI->set_userdata(array('curl_error_msg' => curl_error($ch)));
+			  $this->CI->session->set_userdata(array('curl_error_no' => curl_errno($ch)));
+			  $this->CI->session->set_userdata(array('curl_error_msg' => curl_error($ch)));
 
 			  //Execute the Error handling module to display errors. 
 		} 
