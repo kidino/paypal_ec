@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
+    Sample controller for Paypal_ec.php Library
+	
 	18 November 2012
 	
 	PayPal Express Checkout Library for CodeIgniter
@@ -226,5 +228,6 @@ class Test extends CI_Controller {
 	 }
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* Sample controller for Paypal_ec.php Library */
+/* End of file test.php */
+/* Location: ./application/controllers/test.php */
