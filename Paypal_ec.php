@@ -14,12 +14,12 @@
 	- You may load the library from any controller function. I suggest that
 	  you load it from the __construct() function
 	- Before calling the library, you may want to create an array that contains
-	  your Paypal API credentials
+	  your Paypal API credentials -- get that from Sandbox or your own Paypal account
 	  
 	  $paypal_credentials = array(
-			'API_username' => 'paypal_api1.e-sentral.com',
-			'API_signature' => 'AEmMdYb3RRE122AFNn0TfbAxyhYuA.5J3wHV4AfizBZMLpQsQ1Ybaz-e',
-			'API_password' => '37SCHA3TYBJFQ43T',
+			'API_username' => 'paypal_api1.somedomain.com',
+			'API_signature' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZabc.0123456789abcdefgihjklmn-e',
+			'API_password' => 'ABCDEFGHIJ123456',
 			'sandbox_status' => true
 	  );	  
 	  
