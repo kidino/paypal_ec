@@ -3,6 +3,9 @@ Paypal_ec : Paypal Express Checkout Library for CodeIgniter
 
 This is a simple implementation of the Paypal Express Checkout. It's not thorough as it only handles the Sale action type. But for most people, this is all that you need. This library does not handle Order and Authorization (yet - no promises). It also does NOT handle recurring payments too.
 
+- *Paypal_ec.php* - is your CodeIgniter library 
+- *test.php* - is your sample CodeIgniter Controller to demonstrate how to use the library
+
 How to use
 ----------
 
