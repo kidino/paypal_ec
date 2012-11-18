@@ -106,7 +106,7 @@ class Test extends CI_Controller {
 			'type' => $this->ec_action,
 			'return_URL' => site_url('test/back'), // see below have a function for this -- function back()
 			                                       // whatever you use, make sure the URL is live and can process
-												   // the next steps
+			                                       // the next steps
 
 			'cancel_URL' => site_url('test'), // this goes to this controllers index()
 			'shipping_amount' => 5.00,
@@ -152,11 +152,12 @@ class Test extends CI_Controller {
 	 * --------------------------------------------------------------------------------------------------
 	 */
 	 function back() {
-		// we are back from Paypal. We need to do GetExpressCheckoutDetails and DoExpressCheckoutPayment to complete.
+		// we are back from Paypal. We need to do GetExpressCheckoutDetails
+		// and DoExpressCheckoutPayment to complete.
 		$token = $_GET['token'];
 		$payer_id = $_GET['PayerID'];
 		
-		// DoExpressCheckoutPayment
+		// GetExpressCheckoutDetails
 		$get_ec_return = $this->paypal_ec->get_ec($token);
 		
 		if (isset($get_ec_return['ec_status']) && ($get_ec_return['ec_status'] === true)) {
