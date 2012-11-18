@@ -120,7 +120,7 @@ class Test extends CI_Controller {
 			// to false
 			// $this->paypal_ec->redirect_to_paypal( $set_ec_return['TOKEN'], true);
 		} else {
-			$this->error($set_ec_return);
+			$this->_error($set_ec_return);
 		}
 	}
 	
@@ -164,10 +164,10 @@ class Test extends CI_Controller {
 				echo "\n\nDoExpressCheckoutPayment Data\n" . print_r($do_ec_return, true);
 				echo "</pre>";
 			} else {
-				$this->error($do_ec_return);
+				$this->_error($do_ec_return);
 			}
 		} else {
-			$this->error($get_ec_return);
+			$this->_error($get_ec_return);
 		}
 	}
 	
